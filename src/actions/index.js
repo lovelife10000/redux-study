@@ -1,22 +1,22 @@
-let nextTodoId = 0;
-//Action
-export const addTodo = (text) => {
-	return {
-		type: 'ADD_TODO',
-		id: nextTodoId++,
-		text
-	}
-}
-export const toggleTodo = (id) => {
-	return {
-		type: 'TOGGLE_TODO',
-		id
-	}
-}
+let nextTodoId = 0
+export const addTodo = text => ({
+    type: 'ADD_TODO',
+    id: nextTodoId++,
+    text
+})
 
-export const setVisibility = (filter) => {
-    return {
-        type: 'SET_VISIBILITY',
-        filter
-    }
+export const setVisibilityFilter = filter => ({
+    type: 'SET_VISIBILITY_FILTER',
+    filter
+})
+
+export const toggleTodo = id => ({
+    type: 'TOGGLE_TODO',
+    id
+})
+
+export const VisibilityFilters = {
+    SHOW_ALL: 'SHOW_ALL',
+    SHOW_COMPLETED: 'SHOW_COMPLETED',
+    SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
