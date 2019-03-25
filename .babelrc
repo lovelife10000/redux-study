@@ -1,5 +1,7 @@
 {
-  "presets": [
-    ["es2015", {"modules": false}]
+  "presets": ["@babel/env","@babel/react"],
+  "plugins": [
+    "syntax-dynamic-import"
+
   ]
 }

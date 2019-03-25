@@ -1,9 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
 var htmlWebpackPlugin = require('html-webpack-plugin');
-var base = require("./webpack.config.base.js");
-var address = base.address; //'localhost';//base.address;
-var port = base.port;
 
 
 var config = {
@@ -15,10 +12,8 @@ var config = {
     },
     output: {
         path: __dirname,
-
         filename: 'bundle.js',
-
-        publicPath: 'http://' + address + ':' + port + '/'
+        publicPath: '/'
     },
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),
@@ -48,9 +43,9 @@ var config = {
             loaders: 'babel-loader',
             exclude: /node_modules/,
             include: __dirname,
-            query: {
-                presets: ['es2015', 'stage-0', 'react']
-            }
+            // query: {
+            //     presets: ['es2015', 'stage-0', 'react']
+            // }
         },
         ]
     }

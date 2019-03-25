@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"webpack-dev-server --mode development --progress --hot --open"
+    "dev": "webpack-dev-server --mode development --progress --hot --open"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,24 @@
   "bugs": {
     "url": "https://github.com/lovelife10000/redux-study/issues"
   },
-  "homepage": "https://github.com/lovelife10000/redux-study#readme"
+  "homepage": "https://github.com/lovelife10000/redux-study#readme",
+  "devDependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "@babel/core": "^7.4.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-es2017": "^6.24.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1"
+  }
 }
